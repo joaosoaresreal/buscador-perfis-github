@@ -7,7 +7,7 @@ type CardsProps = {
 export function Card({children}:CardsProps) {
     return (
         <>
-            <List>
+            <List sx={{display:'', border: 3, padding:1, gap: 2}}>
                 {children}
             </List>
         </>

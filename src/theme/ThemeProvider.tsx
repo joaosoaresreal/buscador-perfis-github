@@ -11,7 +11,7 @@ const theme = createTheme({
       main: indigo[800],
     },
     secondary:{
-        main: indigo[100],
+        main: indigo[400],
     }
   },
 });
