@@ -6,13 +6,12 @@ import { Theme } from "./theme/ThemeProvider"
 function App() {
 
   return (
-   <>
-   <Theme>
-   <CssBaseline/>
-    <Perfil/>
-   </Theme>
-
-   </>
+    <>
+      <Theme>
+        <CssBaseline />
+        <Perfil />
+      </Theme>
+    </>
   )
 }
 

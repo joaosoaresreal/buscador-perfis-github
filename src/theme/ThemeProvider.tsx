@@ -8,7 +8,7 @@ type ThemeProps = {
 const theme = createTheme({
   palette: {
     primary: {
-      main: indigo[800],
+      main: indigo[700],
     },
     secondary:{
         main: indigo[400],
