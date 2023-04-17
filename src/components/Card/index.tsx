@@ -1,15 +1,21 @@
-import { List } from '@mui/material'
+import { Box } from '@mui/material'
 
 type CardsProps = {
     children: React.ReactNode;
 }
 
-export function Card({children}:CardsProps) {
+export function Card({ children }: CardsProps) {
     return (
         <>
-            <List sx={{display:'', border: 3, padding:1, gap: 2}}>
+            <Box sx={
+                { display: 'grid',
+                border: 3, 
+                padding: "1%", 
+                gap: "2%" }
+            }
+            >
                 {children}
-            </List>
+            </Box>
         </>
     )
 }

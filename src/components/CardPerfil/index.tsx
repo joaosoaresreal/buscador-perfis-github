@@ -1,6 +1,7 @@
-import { Avatar, Box, Button, TextField, Typography } from "@mui/material";
+import { Avatar, Box, Button, Typography } from "@mui/material";
 import { Card } from "../Card";
 
+/*
 type CardPerfilProps = {
     user: {
         login: string
@@ -9,8 +10,9 @@ type CardPerfilProps = {
         html_url: string
     }
 }
+*/
 
-export function CardPerfil({ user }: CardPerfilProps) {
+export function CardPerfil(/*{ user }: CardPerfilProps*/) {
     return (
         <>
             <Card>
@@ -18,7 +20,6 @@ export function CardPerfil({ user }: CardPerfilProps) {
 
 
                 <Box sx={{
-
                     backgroundColor: 'primary.dark'
                 }} display={"grid"} alignItems={"center"} justifyItems={"center"} padding={6}>
 
