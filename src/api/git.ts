@@ -7,5 +7,5 @@ const api = axios.create({
 
 export async function getUsers(nome: string) {
     const users = await api.get(nome)
-    return users
+    return users.data
 }

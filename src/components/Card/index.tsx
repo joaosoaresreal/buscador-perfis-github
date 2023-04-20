@@ -8,8 +8,7 @@ export function Card({ children }: CardsProps) {
     return (
         <>
             <Box sx={
-                { display: 'grid',
-                border: 3, 
+                { display: 'grid', 
                 padding: "1%", 
                 gap: "2%" }
             }
