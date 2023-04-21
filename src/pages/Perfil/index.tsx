@@ -10,11 +10,18 @@ type Users = {
     avatar_url: string
     name: string
     html_url: string
+    bio: string
+    followers: string
+    following: string
+    public_repos: string
 
 }
 
 export function Perfil() {
-    const [users, setUsers] = useState<Users>({ avatar_url: "", html_url: "", name: "" })
+    const [users, setUsers] = useState<Users>({
+        avatar_url: "", html_url: "", name: "", bio: "",
+        followers: "", following: "", public_repos: ""
+    })
     const [isLoading, setIsLoading] = useState(false)
 
     const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -42,20 +49,34 @@ export function Perfil() {
                     >
                         <form onSubmit={handleSubmit}>
                             <TextField name="userName" fullWidth label="Nome de Usuário" id="fullWidth" />
-                            <Button type="submit" fullWidth size="large" color="primary">buscar</Button>
+                            <Button type="submit" variant="outlined" fullWidth size="large" color='secondary'>buscar</Button>
                         </form>
                     </Box>
 
                     <Box sx={{
-                        gap: "4%"
+                        gap: "4%",
                     }} display={"grid"} alignItems={"center"} justifyItems={"center"} padding={6}>
 
                         {isLoading ? <CircularProgress /> : (
                             <>
                                 <Avatar src={users.avatar_url} sx={{ width: 130, height: 130 }} />
-                                <Typography gutterBottom variant="h4" component="div">
+                                <Typography gutterBottom variant="h4" textAlign={"center"} component="div">
                                     {users.name}
                                 </Typography>
+                                <Typography variant="h6" textAlign={"center"}>
+                                    {users.bio}
+                                </Typography>
+                                <Box>
+                                    <Typography>
+                                        Seguindo: {users.followers}
+                                    </Typography>
+                                    <Typography>
+                                        Seguidores: {users.following}
+                                    </Typography>
+                                    <Typography>
+                                        Repositorios: {users.public_repos}
+                                    </Typography>
+                                </Box>
                                 <a target="_blank" href={users.html_url}>Perfil no GitHub</a>
                             </>
                         )}

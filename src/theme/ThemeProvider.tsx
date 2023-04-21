@@ -12,6 +12,9 @@ const theme = createTheme({
     },
     secondary:{
         main: indigo[400],
+    },
+    background:{
+      default: indigo[200]
     }
   },
 });

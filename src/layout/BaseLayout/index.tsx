@@ -18,7 +18,7 @@ export function BaseLayout({ children, appBarTitle }: BaseLayoutProps) {
         display='flex'
         flexDirection='column'
         alignItems='center'
-        padding={2}
+        padding={'2%'}
         mt={10}
         sx={{
           bgcolor: "palette.background.default",
