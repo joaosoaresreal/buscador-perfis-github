@@ -1,4 +1,4 @@
-import { indigo } from '@mui/material/colors'; // PALETA DE CORES
+import { blueGrey } from '@mui/material/colors'; // PALETA DE CORES
 import { ThemeProvider, createTheme } from '@mui/material/styles'; // PROVEDOR DO TEMA E FUNÇÃO QUE CRIA O TEMA
 
 type ThemeProps = {
@@ -8,13 +8,13 @@ type ThemeProps = {
 const theme = createTheme({
   palette: {
     primary: {
-      main: indigo[700],
+      main: blueGrey[900],
     },
     secondary:{
-        main: indigo[400],
+        main: blueGrey[300],
     },
     background:{
-      default: indigo[200]
+      default: blueGrey[100]
     }
   },
 });

@@ -49,7 +49,7 @@ export function Perfil() {
                     >
                         <form onSubmit={handleSubmit}>
                             <TextField name="userName" fullWidth label="Nome de Usuário" id="fullWidth" />
-                            <Button type="submit" variant="outlined" fullWidth size="large" color='secondary'>buscar</Button>
+                            <Button type="submit" variant="contained" fullWidth size="large" color='secondary'>buscar</Button>
                         </form>
                     </Box>
 
