@@ -5,7 +5,4 @@ const api = axios.create({
     timeout: 1000 // tempo de atraso resposta
 });
 
-export async function getUsers(nome: string) {
-    const users = await api.get(nome)
-    return users.data
-}
+export default api;
