@@ -2,6 +2,7 @@ import { CssBaseline } from "@mui/material"
 import { Perfil } from "./pages/Perfil"
 
 import { Theme } from "./theme/ThemeProvider"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <Theme>
         <CssBaseline />
         <Perfil />
+        <Footer />
       </Theme>
     </>
   )
